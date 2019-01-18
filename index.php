@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ("include/config.php");
+include ("include/config.php");//include the configuration file
 # This login is structure different use, the content of settings database must be pulled for 
 #various usage. for example (a) the logo of the school, (b) Name of the school etc 
 $settingsQuery = $db->query("SELECT * FROM portal_settings ORDER BY id DESC LIMIT 1");
